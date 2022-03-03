@@ -26,3 +26,9 @@ fun readLongArray(n: Int) = LongArray(n) { read().toLong() }
 
 @JvmField val _writer = PrintWriter(OUTPUT, false)
 inline fun output(block: PrintWriter.() -> Unit) { _writer.apply(block).flush() }
+
+fun search(nums: Array<Int>, target: Int) = nums.indexOf(target)
+
+fun fillArraye(n: Int) : Array<Int>{
+    return Array(n) { readInt() }
+}
